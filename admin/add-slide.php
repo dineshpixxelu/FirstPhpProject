@@ -1,0 +1,56 @@
+<?php 
+
+include '../database.php';
+include 'header.php' ; 
+include 'aside.php' ; 
+if(isset($_POST['submit'])){
+	extract($_POST);
+	$filename = $_FILES["image"]["name"];
+    $tempname = $_FILES["image"]["tmp_name"];  
+    $folder = "assets/images/".$filename;
+    move_uploaded_file($tempname, $folder);
+	$sql = "INSERT into slider(title, description, image) Values('$title','$description','$filename')";
+	$result = $con->query($sql);
+	if($result){
+		echo "Insert successfully";
+	}else{
+	  echo "failed to insert";	
+		
+	}
+	
+	
+}
+
+
+?>
+
+<div class="page-wrapper">
+       <form class="sld-form" method="POST" action="" enctype="multipart/form-data">
+	     <div class="field-group">
+		     <label>Slider Title</label>
+			 <input type="text" name="title" >
+		 </div>
+	     <div class="field-group">
+		     <label>Slider Description</label>
+			 <textarea  name="description" ></textarea>
+		 </div>
+		 <div class="field-group">
+		     <label>Slider Image</label>
+			 <input type="file" name="image" >
+		 </div>
+		 
+		 <div class="field-group">
+			 <input type="submit" name="submit"  value="Add Slide">
+		 </div>
+	   
+	   </form>
+		</div>			
+					
+<?php 
+
+include 'footer.php' ; 
+
+
+
+
+?>					

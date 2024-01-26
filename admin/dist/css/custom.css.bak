@@ -1,0 +1,47 @@
+form.sld-form {
+    padding: 50px;
+}
+
+form.sld-form .field-group {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form.sld-form .field-group label {
+    width: 100%;
+}
+
+form.sld-form .field-group input[type="text"], form.sld-form .field-group textarea {
+    widtH: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form.sld-form .field-group input[type="submit"] {
+    padding: 15px 50px;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid #111;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.Slider {
+    padding: 50px;
+    width: 100%;
+}
+
+.Slider table {
+    width: 100%;
+}
+
+.Slider table th, .Slider table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.Slider table td img {
+    max-width: 200px;
+}

@@ -1,0 +1,62 @@
+.slider-mn .slide {
+    width: 100%;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 650px;
+    text-align: center;
+    padding: 200px 0;
+}
+.slider-mn .slide:after {
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0,0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.slider-mn .slide h3 {
+    color: #fff;
+    width: 100%;
+	z-index:1;
+	position:relative;
+}
+
+.slider-mn .slide p {
+    width: 100%;
+    color: #fff;
+	z-index:1;
+	position:relative;
+}
+.slider-mn .slick-arrow {
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.slider-mn i.icon-arrow-left.flex-prev.slick-arrow {
+    left: 15px;
+}
+
+
+.slider-mn i.icon-arrow-right.flex-prev.slick-arrow {
+    right: 15px;
+}
+
+.slider-mn i {
+    color: #fff;
+}
+.rooms-data img {
+    width: 200px;
+}
+
+.rooms-data table {
+    width: 100%;
+}
+
+.rooms-data table th, .rooms-data table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
